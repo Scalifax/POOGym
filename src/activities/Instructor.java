@@ -1,19 +1,21 @@
+package activities;
+
 import java.util.*;
 
-public class Personal{
+public class Instructor{
 
     private String name;
     private String gender;
     private List<String> curriculum;
 
     // Constructors
-    public Personal(){
+    public Instructor(){
         name = "";
         gender = "";
         curriculum = new ArrayList<>();
     }
 
-    public Personal(String name, String gender, List<String> curriculum){
+    public Instructor(String name, String gender, List<String> curriculum){
         this.name = name;
         this.gender = gender;
         this.curriculum = curriculum;
@@ -44,10 +46,4 @@ public class Personal{
     public void setCurriculum(List<String> curriculum) {
         this.curriculum = curriculum;
     }
-
-    
-
-    
-
-
 }

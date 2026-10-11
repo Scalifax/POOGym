@@ -13,7 +13,7 @@ public class GroupActivity extends Activity {
         maxCapacity = 0;
     }
     
-    public GroupActivity(String name, String instructor, String date, String time, int duration, int price, GroupActivityType type, int maxCapacity) {
+    public GroupActivity(String name, Instructor instructor, String date, String time, int duration, int price, GroupActivityType type, int maxCapacity) {
         super(name, instructor, date, time, duration, price);
         this.type = type;
         this.maxCapacity = maxCapacity;

@@ -1,17 +1,17 @@
 package partnerships;
 
-public class Individual extends Partner {
+public class IndividualPartner extends Partner {
     
     // Attributes
     private int birth;
 
     // Constructors
-    public Individual() {
+    public IndividualPartner() {
         super();
         birth = 0;
     }
 
-    public Individual(String name, int partnerNumber, String email, int discount, int birth) {
+    public IndividualPartner(String name, int partnerNumber, String email, int discount, int birth) {
         super(name, partnerNumber, email, discount);
         this.birth = birth;
     }
