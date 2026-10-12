@@ -18,4 +18,22 @@ public class GroupActivity extends Activity {
         this.type = type;
         this.maxCapacity = maxCapacity;
     }
+
+    // Getters
+    public GroupActivityType getType() {
+        return type;
+    }
+
+    public int getMaxCapacity() {
+        return maxCapacity;
+    }
+
+    // Setters
+    public void setType(GroupActivityType type) {
+        this.type = type;
+    }
+
+    public void setMaxCapacity(int maxCapacity) {
+        this.maxCapacity = maxCapacity;
+    }    
 }

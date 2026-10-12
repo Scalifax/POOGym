@@ -11,7 +11,16 @@ public class IndividualPartner extends Partner {
         birth = 0;
     }
 
-    public IndividualPartner(String name, int partnerNumber, String email, int discount, int birth) {
+    public IndividualPartner(String name, int partnerNumber, String email, int birth) {
+        
+        int discount = 0, age = 2026 - birth;
+
+        if(age < 18) {
+            discount = 10;
+        } else if(age >= 65) {
+            discount = 15;
+        }
+
         super(name, partnerNumber, email, discount);
         this.birth = birth;
     }
@@ -24,5 +33,13 @@ public class IndividualPartner extends Partner {
     // Setters
     public void setBirth(int birth) {
         this.birth = birth;
+    }
+
+    // Methods
+
+    @Override
+    public String toString() {
+        return "> Individual Partner: " + getName() + ", Partner Number: " + getPartnerNumber() 
+                + ", Email: " + getEmail() + ", Birth Year: " + birth + ", Discount: " + getDiscount() + "%";
     }
 }

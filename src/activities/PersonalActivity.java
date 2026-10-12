@@ -15,4 +15,14 @@ public class PersonalActivity extends Activity {
         super(name, instructor, date, time, duration, price);
         this.intensity = intensity;
     }
+
+    // Getters
+    public PersonalActivityIntensity getIntensity() {
+        return intensity;
+    }
+
+     // Setters
+    public void setIntensity(PersonalActivityIntensity intensity) {
+        this.intensity = intensity;
+    }
 }

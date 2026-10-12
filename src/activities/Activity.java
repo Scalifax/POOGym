@@ -28,4 +28,54 @@ public class Activity {
         this.duration = duration;
         this.price = price;
     }
+
+    // Getters
+    public String getName() {
+        return name;
+    }
+
+    public Instructor getInstructor() {
+        return instructor;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public String getTime() {
+        return time;
+    }
+
+    public int getDuration() {
+        return duration;
+    }
+
+    public int getPrice() {
+        return price;
+    }
+
+    // Setters
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setInstructor(Instructor instructor) {
+        this.instructor = instructor;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+
+    public void setTime(String time) {
+        this.time = time;
+    }
+
+    public void setDuration(int duration) {
+        this.duration = duration;
+    }
+
+    public void setPrice(int price) {
+        this.price = price;
+    }
 }
